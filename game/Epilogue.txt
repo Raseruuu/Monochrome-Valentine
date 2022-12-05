@@ -1,0 +1,470 @@
+image officeBG:
+    "images/bg/office.jpg"
+    zoom 1.8
+label chapter5_4:
+    window hide
+    call screen chap("Epilogue", "Another story") with dissolve
+    hide screen chap
+    call nextpage
+    play music "audio/Peace_bgm_maoudamashii_acoustic38.ogg"
+    scene black with dissolve
+    # After the credits are done rolling, fade into a sky bg, then pan down to the city (or just zoom out from a sky shot of the city bg so it shows the city. Think cone)
+
+    # After the city BG functioning as the establishing shot, cut to an office space, a conference room specifically
+    show Ashley open down frown at middef with dissolve:
+        yoffset 500
+    call nextpage
+    n"2:15pm was the current time."(40,convo_ypos(-120),show_tail="narr",show_xmax=800,show_retain=2)
+    n"The meeting was supposed to happen at 1:30, but our clients seemed to be running late."(40,convo_ypos(50),show_tail="narr",show_xmax=800,show_retain=1)
+    n"I can’t tell if it’s incompetence, poor planning, a power move, or just disrespect for a client to arrive this late when it was them who requested us."(40,convo_ypos(60),show_tail="narr",show_xmax=800,show_retain=0)
+    call nextpage
+    scene officeBG with dissolve
+    n"Around me, I could see my coworkers distracting themselves by mindlessly scrolling through their phones, engaging in idle chatter, or just staring blankly out the windows."(40,convo_ypos(-120),show_tail="narr",show_xmax=800,show_retain=3)
+    n"Me, on the other hand, I had only recently moved here and barely knew the names of these people and my phone was being charged so I had nothing but my thoughts to occupy my time."(40,convo_ypos(80),show_tail="narr",show_xmax=800,show_retain=2)
+    n"Unfortunately, an idle mind, leads to wandering."(40,convo_ypos(80),show_tail="narr",show_xmax=800,show_retain=1)
+    n" Which is why I ended up thinking about the last encounter I had with my, now former, boyfriend."(40,convo_ypos(80),show_tail="narr",show_xmax=800,show_retain=0)
+    call nextpage
+    # -------------
+    # Flashback scene
+    scene flashback
+    show screen black_border
+
+    scene station_int with dissolve
+    show Blake open frown at middef with dissolve
+    b "I'm sorry."(480,300,show_tail="baseleft",show_xmax=460)
+
+    hide Blake
+    # a "Stop apologizing."
+    show Ashley open smile at middef with dissolve
+    a "That curtain has fallen on that part of our life, so now it’s time to go on to another act." (450,400,show_tail="baseleft",show_xmax=460)
+    # Flashback ends
+    # -----------------
+    hide screen black_border
+    call nextpage
+    # Screen shake and single THUD sound
+    scene officeBG with Shake((0, 0, 0, 0), 0.5, dist=40) :
+        xalign 0.9
+    c1 "M-Ms Santiago? Are you alright?"(100,300,show_tail="baseleft",show_xmax=460)
+    show Ashley concerned open smile at middef with dissolve:
+        xalign 0.7
+    a "I’m fine, just contemplating the mistakes of my youth."(480,300,show_tail="baseleft",show_xmax=460)
+    c1 "What?" (100,300,show_tail="baseleft",show_xmax=460,show_retain=2)
+    show Ashley closed
+    a "Don’t worry about it."(480,300,show_tail="baseleft",show_xmax=460,show_retain=1)
+    show Ashley open
+    n"I picked my head up off the table, acting like nothing happened."(40,convo_ypos(600),show_tail="narr",show_xmax=600,show_retain=0)
+    call nextpage
+
+    n"My forehead stung." (40,convo_ypos(400),show_tail="narr",show_xmax=600,show_retain=2)
+    n"That’s to be expected though when one smashes their head into the table to punish themselves for their embarrassing, morning soap-opera level memories."(40,convo_ypos(40),show_tail="narr",show_xmax=600,show_retain=1)
+    n"I mean, it was a pleasant memory from someone I care deeply about. But I wasn’t about to show vulnerability in front of my coworkers."(140,convo_ypos(80),show_tail="narr",show_xmax=600,show_retain=0)
+    call nextpage
+    show Ashley frown up
+    a "Any word from the client?" (480,300,show_tail="baseleft",show_xmax=460,show_retain=2)
+    c1 "Oh, they should be-" (100,300,show_tail="baseleft",show_xmax=460,show_retain=1)
+
+    m "{size=30}Sorry we’re late!{/size}" (200,600,show_tail="yell",show_xmax=750,show_retain=0) with Shake((0, 0, 0, 0), 0.5, dist=30)
+    #Have this dialogue box be a shout and shake it, then pan the BG (if possible) over to the other end of the office BG
+    scene officeBG with dissolve:
+        xalign 0.1
+    show Marie at middef
+    n"Before my superior could finish his sentence, a frazzled looking young woman bursts through the door, with forms and folders spilling out of her arms."
+    call nextpage
+
+    m "Our deepest apologies, we ran into some unexpected delays, but we’re here now!"
+    scene officeBG with dissolve:
+        xalign 0.9
+
+    a "The meeting was at 1:30."
+    m "I know! I’m so sorry!"
+    n"As if on reflex, this girl bowed her head, forgetting that she was carrying several items in her arms, which caused them to spill out all over the floor."
+    call nextpage
+    n"My nearest coworkers took it upon themselves to help her gather her things, which she both apologized and thanked them for."
+    p "You need some help there, Marie?"
+    m "Um… I… no, thanks! I’ll just… I’ll just handle this, go on without me, please."
+    p "Well, if you say so."
+    call nextpage
+
+    n"From the hallway, a man steps into the room." # Either have a CG of Pat entering the office, or just slide his sprite into frame
+    show Pat at middef with dissolve
+    n"He’s a very handsome looking man, but I couldn’t help but feel an aura of pride radiating off him. He carried himself like a man very proud of his achievements."
+    n"I don’t think I’m gonna like him very much if he turns out to be the arrogant type."
+
+    c1 "I take it you must be…"
+
+    p "Victor J. Patrick, at your service."
+
+    p "I go by Pat instead of Vic, long story, won’t bore you with the details."
+
+    n"As he introduces himself, he goes around the table shaking hands with everyone, giving them a supernova smile and that super model wink that I can see from here, his performance makes my coworker’s hearts flutter like school girls in a summer romcom."
+
+    # As he’s doing this, have the BG pan back to where Ashley was, I’m unsure if her sprite would be on-screen or not.
+
+    n"Then he gets to me, holding out his hand, as if waiting for me to play the role I’m expected to play."
+    n"A girl completely smitten by his charm and good looks, and willing to overlook his rudeness because he’s just oh so dreamy. Sure he’s a bad boy but maybe I can change him!"
+    p "Well, don’t leave me hanging here~"
+    n"As he shoots me that look, I think he was expecting me to fall over like everyone else."
+    n"Unfortunately for him, I am not a fresh-faced college student with an interest in pretty boys who put more time in their appearance than I do."
+
+    c1 "Ms. Santiago?"
+
+    a "I have something to say."
+    c1 "What are you doing?"
+    a "Mr Patrick-"
+    p "Call me, Pat."
+    a "Mr. Patrick."
+    a "Correct me if I’m wrong, but the meeting was scheduled for 1:30pm today, correct?"
+    m "Th-that’s correct ma’am! And I’m sorry-"
+    n"I held up my hand to cut her off."
+    a "And what time is it now, Mr. Patrick?"
+    p "Uh…"
+    n"Dumbfounded that I seemed to be totally immune to his charms, he produced his cellphone from his pocket."
+
+    p "It’s about 2:20pm now."
+    a "Right. It was your party that requested this meeting, and it was yours who set the date and time. You made us wait here for nearly an hour, we had to move a lot of things to get this meeting set up. This is a very poor first impression to make on potential business partners, you are aware of this?"
+    p "I…"
+
+    a "I’ll be honest, I’m not a fan of working with people who make such a disrespectful first impression. So explain to me… why are you so late? Is this some kind of power move? Do you think us beneath you and that you needed to show dominance?"
+    p "Well, the thing is-"
+    a "Furthermore, you seem very inconsiderate to your assistant over there. It makes me wonder if you’ll treat us the same way?"
+    c1 "M-Ms Santiago, please!"
+    "My superior stepped between us, his round body physically blocking us from view of each other as if we were two children in an argument about to take a swing at each other."
+    c1 "On behalf of the company, I humbly apologize for the sharp words of our new team member, Mr Patrick! Of course, we’re more than willing to start over!"
+    "A superior kowtowing to please a client, a familiar sight. I looked around the room, wondering if I had gone too far? I said what I felt, but it was true that I was new here. Still, I can’t be the only one who was thinking it. I’m just the only one who had the strength to say it."
+    "At this display, Pat stifled a laugh, something I hadn’t expected him to do. Usually, when I chew people out, they either tuck their tails between their legs or issue a quickly-worded poorly thought-out rebuttal until they just give up and go home."
+    p "No, she’s absolutely right."
+    "At this, Pat walks over to his assistant Marie, and helps her pick the documents up off the floor." # Pan the BG back over to where Marie entered
+    p "Sorry Marie, I should’ve carried some stuff to ease the burden off you."
+
+    m "Um, I…"
+
+    p "Look, i don’t really say it much and it’s a bit embarrassing to say it in public. But, I really do appreciate everything you do, so I’ll try to be more considerate to you in the future, okay?"
+    m "Mr. Patrick-"
+    p "Pat."
+    "This was also a pleasant surprise. I half-expected him to put all the blame on his assistant, since that tended to be how this show went down. Though, I can’t tell if he’s being sincere right now or if it’s just because I put him on the spot. I’ll reserve my judgement until later."
+    p "And, as for everyone here."
+    p "I humbly apologize for being late, there were some… unexpected delays that were entirely my fault. I couldn’t stop them, but I could’ve at least called ahead to inform you of the situation."
+    a "So why didn’t you?"
+# Screenshake
+    p "..." with Shake((0, 0, 0, 0), 0.5, dist=10)
+    a "...?"
+    p "I uh… I kinda forgot what your business number was."
+
+    a "...are you being serious, right now?"
+
+    p "Yeah, though I don’t look it, I get a bit nervous talking on phones. And, I had a bunch of different numbers in my call log, so I wasn’t sure which one was the right one."
+
+    a "Couldn’t you have guessed based on when you last called?"
+
+    p "Well, the thing about that is…" # Pause between these two lines for a brief moment, as if Pat is trying to come up with a reason for why he couldn’t just do what Ashley suggested
+
+    p "That it’s an excellent idea and I wish I would’ve thought of it sooner."
+
+    p "In anycase, I apologize for being late, and you were right to call me out on it."
+
+    c1 "Mr Patrick-"
+
+    p "Pat."
+
+    c1 "Mr Pat, you have nothing to apologize for, if anything we should be the one apologizing to you for-"
+
+    p "What’s your name, sir?"
+
+    c1 "Me? Uh, Khan Yun is my name."
+
+    p "Mr. Khan Yun, you don’t have to be so formal with me."
+
+# A fun thing to do during this negotiation scene might be to adopt an ace attorney format, where the camera switches back and forth between the two sides. In which case, we might need to create a sprite for Khan and Marie… or not. Maya wasn’t always by Phoenix’s side in the scenes, so it can be fine with just Pat and Ashley representing their two sides.
+
+    p "So, this meeting was about me signing on to work for this company as a talent?" # Have Pat’s sprite sit down when he says the word, ‘so’
+
+    c1 "That is correct, once we get resituated here, we can go over the forms and contracts and negotiate to your liking."
+
+    p "That’s good, but I’d like to add something."
+
+    c1 "Oh?"
+
+    p "Yeah."
+
+    "He gestures to me."
+#
+    p "If possible, I’d like ms Santiago to be my Producer."
+
+    c1 "I’m sorry, what?"
+
+    "Even I was caught off guard by that."
+
+    p "Her, the girl who verbally handed me my own ass, I’d like her to be my producer."
+
+    c1 "Well, I… mr Pat, we have a number of talented agents to assist you in that matter. Surely one of them would be more than adequate. Furthermore, ms Santiago is a new hire, though she’s quite talented, she’s never had to manage talent before."
+
+    "He’s not wrong, I was hired for a desk job, not to manage the talent. Hell, I was only in this meeting in particular to write down the details of the meeting."
+
+    p "Mr Khan, I’ll be very clear about this. I have no patience for yes-men, I’d prefer to work with someone who has the courage to tell me when I’m being an ass. My gut is telling me that working with Ms Santiago instead of another producer would be awesome."
+
+    a "Excuse me, hey, Hi. I’m sitting right here. Don’t I get a say in this?"  with Shake((0, 0, 0, 0), 0.5, dist=10) # Screen shake when Ashley finally speaks up
+
+    p "Well, if you go along with this, I’m prepared to offer you…"
+
+    "He takes a slip of paper and a pen from the conference table, writes something, and slides it over to us across the table." # Have the BG actually slide over to Ashley’s side, in addition, new asset, a slip of paper with something written on it
+
+    p "That, in exchange."
+
+    "Those of us at this end of the table gather around to see what he wrote on the slip of paper."
+
+    "....." # Cut all sound and pause the screen for a moment as if they’re all stunned. Also, keep the slip of paper on screen
+
+    "And then collectively lose our shit on the inside."
+
+    "Fortunately, we’re all trained business professionals so if we were shocked by what he was offering in exchange, we didn’t show it." # Remove the slip of paper
+
+    c1 "Excuse us for one moment, team huddle up!"
+
+    "The closest members gathered into a huddle to look at the slip of paper again." # Put the slip of paper back up
+
+    c1 "..."
+
+    a "..."
+
+    c1 "So…"
+
+    a "I know, this is a very generous offer."
+
+    c1 "I mean, we’d be crazy not to take this, right?"
+
+    a "It does make more business sense, however… I’ll remind you that I’m not a producer nor am I in the department that manages the talent." # Remove the slip of paper
+
+    c1 "I mean, what even is a producer, right? It’s not like you need some special training, just make sure he doesn’t do anything stupid."
+    a "I’m not sure how I feel about playing mommy to some guy who seemed to like the verbal thrashing I gave him."
+    c1 "I’m not here to judge, I only care about if he makes money. And projections do show that he’s very popular with the girls aged 15-40. The executives are looking to expand into other demographics, after all."
+    a "That being said, surely we have someone else who can babysit him, right?"
+    c1 "Maybe, but let me show what he’s offering again."
+    "He shows me the piece of paper once more." # show the slip of paper again
+    a "...I’m still a bit conflicted."
+    "Suddenly, someone nearby started chanting in a barely hushed tone, \"Do it. Do it. Do it. Do it.\""
+    "Which lead to other coworkers chanting as well."
+    "Even the boss was joining in."
+    "...."
+    "Inhale."
+    "Exhale."
+    "You ever feel like, you can see the moment where your life can split off into two directions. That’s kinda how I feel right now, actually."
+    "On one hand, I came here to start a new chapter in my life, I was hoping that it’d be a nice, quiet, peaceful one for a while. Getting involved with this seems like it’d be pretty stressful."
+    "On the other hand, that is a very generous offer and if I agree to it, we’re all but guaranteed to land this client. That and I guess he’s not that bad of a guy? A bit immature, acts before thinking, and the kind of guy who just fills me with the strong desire to punch someone."
+    "I need a tiebreaker. What would Blake do?"
+
+# ------------------------------
+
+    # Flashback line
+
+    a "Don’t let the chains of the past hold you back."
+
+# Flashback over
+
+# ------------------------------
+    "THUD!" with Shake((0, 0, 0, 0), 0.5, dist=10)
+    #Thud sound and screen shake as it fades back into the present
+    c1 "Ms Santiago, please! You’ll break something if you keep doing that!"
+    a "Sorry, I just felt that I needed to hit something."
+    "That was my own line too! Still, maybe I should take my own advice."
+    a "Okay, I can do this."
+
+    "I break from the huddle, and slowly walk over to Pat’s side of the table." # Pan the BG
+    "I lock eyes with him, as if trying to discern some hidden secret beneath those crystal clear eyes of his-"
+    "FOCUS!"
+    "Don’t get drawn into his orbit."
+    "This was gonna be an important decision, I could feel it. Maybe that’s superstitious, but I know what I have to do."
+    a "Do you have something broken in your head?"
+    p "What?"
+    a "You don’t even know me, or my qualifications."
+    a "And you want me to be your producer? Why is that, exactly? There’s way more talented people at this, why me specifically? And don’t gimme that line about not liking yes-men, I invented that line."
+    p "Well, I can’t really explain it outside of that, but…"
+    "His demeanor suddenly shifts."
+    p "An old friend of mine used to say, sometimes it’s better to trust my instincts even when I don’t know why. I guess that’s kinda what I’m doing now."
+    "He slowly stood up and faced me."
+    "In a weird way, this sorta resembled those old kung-fu movies that Blake liked to watch. Where two powerful warriors face each other on the field of battle, sizing each other up. Waiting for just the right moment to make the first strike. But one of them has a smug grin on his face, and the other thinks he’s a pretty boy who definitely spends more on his hair than I spend on my rent."
+
+    # Pause here for a moment… and then play a cell-phone ringing sfx
+
+    "....."
+    m "M-Mr Pat, sir. It’s um… your grandmother."
+    p "Really? What about?"
+    m "Uh, she’s saying something about… um… the volume remote on her TV is stuck?"
+    p "Sorry, guys, I know this is really unprofessional, but… I gotta take this. I’ll be back in just a few minutes, okay? Cool!" # Have Pat slide out of frame
+    ". . . . . . . ."
+    c1 "So, um-"
+    a "I’m gonna grab a drink."
+
+
+
+
+# Fade to black, and fade in to to an office-hallway. If possible, include a vending machine. If even more possible, try to find a vending machine sfx but one that gets stuck. There’s a brief moment where the BG is gonna be panned left and right later, so keep the BG zoomed in
+
+    a "Dammit."
+    "I was just coming out here to the hallway vending machine, to get a drink. But, just my luck though, the machine is stuck!"
+    "I’m about to just give up, when I suddenly remembered; The day I first got here, the machine was also broken. My supervisor was running me and other new hires through orientation, one of them got their money eaten by the machine."
+    "..."
+    "Take a quick peek around the corners to make sure no one’s watching, in case I can get written up for damaging company property." # Pan the BG left and right then back to center
+    "If I remember correctly…"
+    "The supervisor kicked the machine, right…"
+    "About…"
+
+    "Here!" # Screen shake and impact noise, as well as two cans falling, or just one, not sure if the 2nd one is needed yet
+    "There we go." # If Ashley’s sprite is on screen, pan it down a bit, then back up as if she’s bending down to get something. Otherwise just pan the camera down slightly before putting it back up.
+    p "S’up?"
+    a "AGH!" with Shake((0, 0, 0, 0), 0.5, dist=10)# Screen shake fx
+    a "What?!"
+    p "Oh, uh, I was just saying I think we got off on the wrong foot."
+    a "Is that it?" # Sound FX of a can opening
+    p "Sorry for startling you."
+    a "...." # If we have a VA have her actually drink from a can instead of faking it, it’s usually better to actually drink and eat rather than fake it
+    p "Yeah, my bad. So, given any thought to the offer?"
+    a "Not particularly."
+    p "Don’t wanna go through with it?"
+    a "Hm, if you must know, I’m undecided."
+    a "On the one hand, I moved here to keep my head down and live a normal, peaceful life."
+
+    # Play SFX of the can being dropped in a trash barrel
+
+    a "On the other hand, staring at spreadsheets for several hours is mind-numbingly dull."
+    p "Sounds like you need a tiebreaker, something to tip the scale."
+    a "And I suppose that’s where you come in?"
+    "He just shrugs his shoulders, so confident that he can convince me. That arrogance of his would definitely be a problem."
+    "..."
+    a "Alright. Then, have you ever heard of an elevator pitch?"
+    a "You’ve got until I get back to the conference room to convince me to sign on as your glorified babysitter."
+    a "But, fail to convince me, and this whole pestering me thing ends. Deal?"
+    p "Deal."
+    "And there goes that smile again."
+
+    # This next part is mostly dialogue, but it’d be a great section for manga paneling, for this build, just stick to various office BGs and sprites if that can even be found
+    p "So, you say you’re not thrilled at the prospect of working with me. I get that, t’is human nature."
+    p "But, I can see that look in your eyes and the way you command the room."
+    p "You’re way better than this station. Look at them, they’ve got you taking notes on their behalf! That’s such a waste of your potential."
+    p "So, run with me, and you can tell the next overpaid hairpiece who sends you on a coffee run to go screw themselves."
+    p "But I get it, you don’t know anything about me. What I’m asking is crazy, right?"
+    p "Well, maybe it’s not so bad to do something crazy once in a while. The adventure is definitely more fun than the destination."
+    p "Sure, you can play it sensible. The uncrowned queen of office life."
+    p "Or… you can take a chance and see what happens next!"
+    p "Don’t you wanna get away from this same old office drudgery? To never have someone ask you to cover their workload, to spend day after day reading through reports and charts and graphs? Having to say, yes sir, to some fresh-faced college kid whose daddy works on the board of directors."
+    p "Cause you can be another face in the crowd, or you can be like me. Stay in your lane like they expect you to do, or you can take a leap of faith with me."
+    p "And see just how this adventure plays out."
+    "God he talks so much. Does he just like hearing the sound of his own voice? Well, I guess it’s my turn."
+
+    "Wait, why does this sound familiar? Like. Worse, but familiar. Whatever. Just roll with it."
+    a "Okay, mr confident. You talk a big game, but I’m not convinced."
+    a "I can’t tell if you love the sound of your own voice or if you ripped that speech of yours from somewhere else."
+    p "Little of both."
+    a "Well, I hate to break it to you, but"
+    a "I’m no princess"
+    a "Trapped in a gilded cage."
+    a "So thanks, but your 1st-year psychology student mixed with motivational speaker show won’t work on me."
+    a "I’m not one of your swooning fangirls who obsessively check your social media profiles for a shirtless selfie pic."
+    a "But really, love the confident display you put on for me."
+    a "If you weren’t so handsome, maybe you could’ve had a brilliant career as a life coach."
+    p "Oh you think I’m handsome?"
+    a "Don’t push your luck, Patrick."
+
+    a "You’re way off base, by the way. I’m not unhappy with, as you described it, the drudgery of office life. I’m perfectly okay with this part I’m playing, I’ve got everything I need right here and then some. So no, I don’t need your help to fly, because I’m not trying to leave."
+    a "You’ll have to take that journey yourself, Pat."
+    p "So is this really how you’d like to spend your days?"
+    p "Waking up at the asscrack of dawn. Commuting to a 9-5 job for half your life. Doing the same routine 5 days a week. Misery, monotony, meetings, and office politics?"
+    a "It may be boring to you, but at least I know what to expect. It’s stable while you’re asking for chaos."
+    a "If I get mixed up with you, people will never shut up about it the second they find out who I am; the disgraced executive of a fortune 500 company turned producer for a vain model with dreams of stardom."
+    a "Talk about a train wreck."
+
+    p "Maybe, but maybe it could help lighten that burden you’re carrying around."
+    a "What?"
+    p "Like I said, the journey is more fun than the destination. Plus, look at me."
+    p "You’ve basically dragged my ass up and down these hallways, but I’ve had this stupid grin plastered on my face the whole time. I haven’t enjoyed a conversation like this in a while."
+    p "Actually, my face kinda hurts from smiling."
+    p "Look, I’m not asking you to put your entire life on hold for me. I’m just asking that you take a chance on me, and allow me the opportunity to ease that pain you’ve been carrying around since I first laid eyes on you."
+    a "..."
+    p "You can fool everyone else, but I can see it. Birds of a feather and all that, jazz."
+    p "The story of a girl fallen from grace and a cowardly guy with a handsome jawline, trying to ease the burdens we carry, now that’s a hell of a show that seems worth watching."
+
+    # They’re back at the conference room now
+    p "But, a deal’s a deal. Guess I failed, so I’ll respect your wishes. Sorry if I caused you any discomfort, I have a tendency to… sorta do things my way at other people’s expense. Sorry again."
+    "Not skipping a beat, Pat turned the charm back on and sat back down at the conference table, as if the conversation we just had didn’t happen."
+    p "So, people, sorry for the delay. Elevator’s broken, had to take a roundabout way back. But I’m here now, so I believe you had some forms for me to look over before signing?"
+    c1 "Um, yes, but as to the matter of Ms Santiago taking on the roll of your producer."
+    p "Oh, yeah. Sorry about that, I got a little caught up in the moment. We can just forget that. Anyways, without further delay, let’s get to work."
+
+        # Placeholder for the Blake line here that should be placed in scene 05 during the big fix update.
+
+    p "Okay, so, next order of business would be..."
+    a "Hang on!"
+    "I don’t look it, but I always hated being the center of attention. All those eyes, staring at me, expecting something from me. It’s unnerving. Take a breath girl. Take a breath."
+    a "This offer of yours." # Show the slip of paper again from earlier
+    a "It’s pretty generous, but you’re essentially asking me to take time off from the job I was hired here to do in order to follow you along."
+    a "That’s a huge potential loss in earnings, and it depends entirely on how popular you are."
+    p "..."
+
+    # Show Pat smirk
+    p "Fair enough, what would you propose?"
+    a "Well for starters, how about a cut of your earnings. That’s pretty standard for this sort of arrangement, isn’t it?"
+    p "Fair enough, you are taking a big risk so I won’t ask you to work for pennies."
+    p "I’ll give you 5%, how’s that?"
+    a "Do I look like I was born this morning?"
+    a "15%"
+    p "Well, why don’t you just ask for my blood while you’re at it!"
+    p "7%."
+    a "I can do 13%."
+    p "9%, maybe."
+    a "11%."
+    p "10%."
+    "..." # Make sure there’s no sound in this part
+    "...crap, my facial muscles are twitching! This was such a textbook negotiation example, that I didn’t think he’d go for it."
+    "Keep steady, Ashley, don’t let him know that the offer is more than enough."
+    p "Eh? What’s that I see? Come onnnnn, your resistance is fading~"
+    "I crossed my arms and looked away, Feigning a pouting expression to not show him that the offer was acceptable, trying to hold out to see if he’ll offer something more."
+    "..."
+    "........."
+    "......................."
+    a "Very well. 10% is fair."
+    p "Awesome! I don’t know why but I’m pretty excited about this~"
+    a "I’m an adult, I care more about profit than fun."
+    p "We’ll make that too!"
+    p "Ah! I see that smile on your face, what’re you thinking?"
+    a "I’m thinking about whether I should throw you from the roof or see if I can fit you through that window."
+    p "That’s cold, bro."
+    a "I’m not your bro, Pat."
+    p "Ah! You said it, you called me, Pat! So you don’t totally hate my guts!"
+    a "Like 90%."
+    p "Good enough for me!"
+    a "Okay, this comedy routine aside,"
+    a "Before I shake your hand, I have one last thing to say."
+    a "I don’t know anywhere near enough about you to say whether I want to be financially joined at the hip with you. I don’t have the time or patience to be chasing you around."
+    a "However, I’m not totally opposed to it. So, how about a compromise. We’ll try this thing for about a month. If we’re not compatible work partners, then you’ll pick a new producer and I’ll go back to my normal desk job. Simple as that."
+    p "That works for me!"
+    a "Furthermore, I’m not your mom, your wife, or one of your fan girls."
+    a "We’re business associates first and foremost. We will act like professionals and no more being late, agreed?"
+    p "Agreed."
+    a "And, I am aware that I can be a bit..."
+    # These are also coworkers
+    c2 "Overbearing?"
+    c3 "Cold?"
+    c4 "Tactless?"
+    c1 "Scary beyond all reason?"
+    a "...Marie, kindly remember the names of the people who just said something so I can get revenge later."
+    a "But yes. You said that you have no patience for yes-men, well I would rather someone be open and upfront with me when I’m being unreasonable. So, part two of this deal, we communicate openly. Deal?"
+    p "Deal."
+    a "Good."
+    "I look down at his outstretched hand, still hanging there like a limp branch. A part of me  wonders if I’m making the right decision."
+    "But what did he say earlier? About trusting his instincts?"
+    "I guess I could try it once."
+    "I firmly grasp his hand, making a decision that I felt could impact the rest of my life."
+    p "So, let’s start over fresh."
+    # Hand-shaking CG would go here
+    p "Hello, I’m Victor J Patrick, my friends call me Pat, and I look forward to working with you."
+    a "Ashley Santiago, new hire, and I’ll be your producer for the time being. If we treat each other with professional courtesy, then we should have no problems."
+    p "Agreed. Ya know, you have a really strong grip for someone so short- owowowowowowow!"
+    c1 "Please don’t damage the talent, Ms Santiago! At least not until he’s signed the other forms!"
+    p "It’s okay, I’m ambidextrous!"
+    "I am instantly regretting this already."
+    "..."
+    "Well, only about 70% regret."
+
+    # Fade to black to end the scene
+#
+#     [End of epilogue]
+    return
