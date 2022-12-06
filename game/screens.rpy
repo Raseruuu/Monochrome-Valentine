@@ -369,7 +369,7 @@ screen chapterselect:
         #     # xalign 0.0 yalign 0.88
         #     text "{size=50}5{/size}" xalign 0.5 yalign 0.5
 init python:
-    persistent.unlocked_gallery=False
+    persistent.unlocked_gallery=True
 screen main_menu():
     default chapsel=False
     tag menu
@@ -379,7 +379,7 @@ screen main_menu():
     imagebutton idle "gui/continue_reading.png" hover "gui/continue_reading_hover.png" action ShowMenu("load") xalign 0.0 yalign 0.58 at halfsize
     imagebutton idle "gui/select_chapter.png" hover "gui/select_chapter_hover.png" action SetScreenVariable("chapsel",not chapsel) xalign 0.0 yalign 0.68 at halfsize
     if persistent.unlocked_gallery:
-        imagebutton idle "gui/gallery.png" hover "gui/gallery_hover.png" action ShowMenu("gallery") xalign 0.0 yalign 0.78 at halfsize
+        imagebutton idle "gui/gallery.png" hover "gui/gallery_hover.png" action ShowMenu("Gallery") xalign 0.0 yalign 0.78 at halfsize
     else:
         add "gui/gallery_locked.png" xalign 0.0 yalign 0.78 at halfsize
     imagebutton idle "gui/preferences.png" hover "gui/preferences_hover.png" action ShowMenu("preferences") xalign 0.0 yalign 0.88 at halfsize
