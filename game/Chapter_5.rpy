@@ -114,10 +114,10 @@ label chapter5_1: #Saying Goodbyes
 
     call nextpage
     show Selena #look away
-    nv "Before I could ask, she unlocks the doors, continuing to look away from me."
-    nv "Without saying a word, I carefully exit the truck and walk around to her window, where she avoids eye contact with me. However, the look on her face told me that she was disappointed with something."
-    nv "With what, I'm not sure."
-    nv "Hope it wasn't about last night."
+    n "Before I could ask, she unlocks the doors, continuing to look away from me."(60,60,show_tail="narr",show_xmax=800,show_retain=3)
+    n "\nWithout saying a word, I carefully exit the truck and walk around to her window, where she avoids eye contact with me. However, the look on her face told me that she was disappointed with something."(60,600,show_tail="narr",show_xmax=400,show_retain=2)
+    n "With what, I'm not sure."(460,600,show_tail="narr",show_xmax=400,show_retain=1)
+    n "Hope it wasn't about last night."(460,780,show_tail="narr",show_xmax=400,show_retain=0)
     nvl clear
 
     call nextpage
