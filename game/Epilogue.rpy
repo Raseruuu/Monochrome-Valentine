@@ -1204,5 +1204,5 @@ label chapter5_4:
 #     [End of epilogue]
     $ persistent.unlocked_gallery=True
     n"Thank you for Playing Monochrome Valentine!"(80,convo_ypos(20),show_tail="narr",show_xmax=750,show_retain=1)
-    n"YOU HAVE UNLOCKED THE GALLERY MENU! Check it out!" (68,convo_ypos(20),show_tail="narr",show_xmax=750,show_retain=0)
+    # n"YOU HAVE UNLOCKED THE GALLERY MENU! Check it out!" (68,convo_ypos(20),show_tail="narr",show_xmax=750,show_retain=0)
     return

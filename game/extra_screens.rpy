@@ -46,19 +46,19 @@ screen bg_gallery():
     tag menu
 
     ## This use statement includes the extra_frame screen inside this one.
-    use extra_frame(_("Background Gallery")):
+    # use extra_frame(_("Background Gallery")):
 
-        grid 1 3:
+    #     grid 1 3:
 
-            xfill True
-            yfill True
+    #         xfill True
+    #         yfill True
 
-            ## Call make_button to show a particular button.
-            # add g_bg.make_button("background", "bg_button")
+    #         ## Call make_button to show a particular button.
+    #         # add g_bg.make_button("background", "bg_button")
 
-            add g_cg.make_button("room", "room_button", xalign=0.5, yalign=0.5)
-            add g_bg.make_button("office", "office_button", xalign=0.5, yalign=0.5)
-            add g_bg.make_button("beach", "beach_button", xalign=0.5, yalign=0.5)
+    #         add g_cg.make_button("room", "room_button", xalign=0.5, yalign=0.5)
+    #         add g_bg.make_button("office", "office_button", xalign=0.5, yalign=0.5)
+    #         add g_bg.make_button("beach", "beach_button", xalign=0.5, yalign=0.5)
 
 
 screen extra_menu():
@@ -66,13 +66,13 @@ screen extra_menu():
 
     add gui.game_menu_background
 
-    hbox:
-        ysize 40
-        xpos 75
-        ypos 75
-        imagebutton auto "gui/Icons/back-button_%s.png" xanchor 0.0 yanchor 0.5 yalign 0.5 action Return() alt _("Back")
-        null width 55
-        label _("Extras") xanchor 0.0 yanchor 0.5 yalign 0.5 text_font persistent.pref_text_font text_size 50 yoffset 5 text_color "#fff"
+    # hbox:
+    #     ysize 40
+    #     xpos 75
+    #     ypos 75
+    #     imagebutton auto "gui/Icons/back-button_%s.png" xanchor 0.0 yanchor 0.5 yalign 0.5 action Return() alt _("Back")
+    #     null width 55
+    #     label _("Extras") xanchor 0.0 yanchor 0.5 yalign 0.5 text_font persistent.pref_text_font text_size 50 yoffset 5 text_color "#fff"
 
     vbox:
         spacing 20
@@ -189,13 +189,13 @@ screen Characters():
 screen extra_frame(title):
 
     add gui.game_menu_background
-    hbox:
-        ysize 40
-        xpos 75
-        ypos 75
-        imagebutton auto "gui/Icons/back-button_%s.png" xanchor 0.0 yanchor 0.5 yalign 0.5 action ShowMenu("extra_menu") alt _("Back")
-        null width 55
-        label title xanchor 0.0 yanchor 0.5 yalign 0.5 text_font persistent.pref_text_font text_size 50 yoffset 5 text_color "#fff"
+    # hbox:
+    #     ysize 40
+    #     xpos 75
+    #     ypos 75
+    #     imagebutton auto "gui/Icons/back-button_%s.png" xanchor 0.0 yanchor 0.5 yalign 0.5 action ShowMenu("extra_menu") alt _("Back")
+    #     null width 55
+    #     label title xanchor 0.0 yanchor 0.5 yalign 0.5 text_font persistent.pref_text_font text_size 50 yoffset 5 text_color "#fff"
 
     vbox:
         transclude

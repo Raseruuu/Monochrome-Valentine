@@ -325,7 +325,7 @@ transform halfsize:
     zoom 0.7
 screen chapterselect:
     hbox:
-        xalign 0.38 yalign 0.675
+        xalign 0.30 yalign 0.815
         style_prefix "selectchapter"
         for i in ["p"]+range(1,6)+["e"]:
             button:
@@ -375,14 +375,14 @@ screen main_menu():
     tag menu
     add gui.main_menu_background:
         zoom 0.636
-    imagebutton idle "gui/start_reading.png" hover "gui/start_reading_hover.png" action Start() xalign 0.0 yalign 0.48 at halfsize
-    imagebutton idle "gui/continue_reading.png" hover "gui/continue_reading_hover.png" action ShowMenu("load") xalign 0.0 yalign 0.58 at halfsize
-    imagebutton idle "gui/select_chapter.png" hover "gui/select_chapter_hover.png" action SetScreenVariable("chapsel",not chapsel) xalign 0.0 yalign 0.68 at halfsize
-    if persistent.unlocked_gallery:
-        imagebutton idle "gui/gallery.png" hover "gui/gallery_hover.png" action ShowMenu("Gallery") xalign 0.0 yalign 0.78 at halfsize
-    else:
-        add "gui/gallery_locked.png" xalign 0.0 yalign 0.78 at halfsize
-    imagebutton idle "gui/preferences.png" hover "gui/preferences_hover.png" action ShowMenu("preferences") xalign 0.0 yalign 0.88 at halfsize
+    imagebutton idle "gui/start_reading.png" hover "gui/start_reading_hover.png" action Start() xalign 0.0 yalign 0.66 at halfsize
+    imagebutton idle "gui/continue_reading.png" hover "gui/continue_reading_hover.png" action ShowMenu("load") xalign 0.0 yalign 0.74 at halfsize
+    imagebutton idle "gui/select_chapter.png" hover "gui/select_chapter_hover.png" action SetScreenVariable("chapsel",not chapsel) xalign 0.0 yalign 0.82 at halfsize
+    # if persistent.unlocked_gallery:
+    #     imagebutton idle "gui/gallery.png" hover "gui/gallery_hover.png" action ShowMenu("Gallery") xalign 0.0 yalign 0.78 at halfsize
+    # else:
+    #     add "gui/gallery_locked.png" xalign 0.0 yalign 0.78 at halfsize
+    imagebutton idle "gui/preferences.png" hover "gui/preferences_hover.png" action ShowMenu("preferences") xalign 0.0 yalign 0.9 at halfsize
     imagebutton idle "gui/credits.png" hover "gui/credits_hover.png" action Start("credits") xalign 0.0 yalign 0.98 at halfsize
     if chapsel:
         use chapterselect
@@ -1233,9 +1233,10 @@ screen nvl_dialogue(dialogue):
                 if d.who is not None:
                     text d.who:
                         id d.who_id
-
+                
                 text d.what:
                     id d.what_id
+                    yoffset 90
 
 
 ## This controls the maximum number of NVL-mode entries that can be displayed at once.
