@@ -294,7 +294,7 @@ screen navigation():
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
             textbutton _("Help") action ShowMenu("help")
         if renpy.variant("pc"):
-            textbutton _("Quit") action Quit(confirm=not main_menu)
+            textbutton _("Quit") action Quit(confirm=True)
 
 
 style navigation_button is gui_button

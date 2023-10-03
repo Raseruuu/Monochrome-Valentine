@@ -30,7 +30,7 @@ label chapter5_1: #Saying Goodbyes
     hide screen chap
     play music "audio/Until_We_Meet_Again.ogg" fadein 2.0
     call nextpage
-    $ bedtime=""
+    $ selena_outfit=""
     # scene sky_bright with dissolve
     # play sound "moving truck engine.ogg"
     scene sky_morning with dissolve

@@ -18,7 +18,7 @@
     speaker = renpy.curry(speaker_callback)
 ## Shake the Screen by adding.. with Shake((0, 0, 0, 0), 0.5, dist=20)
 init python:
-    bedtime=""
+   
     import math
     class Shaker(object):
 

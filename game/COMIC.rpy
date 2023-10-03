@@ -164,10 +164,12 @@ default retained_dialogues = []
 init python:
 
     # This is just a list of style names that we want to remember for when multiple dialogues (bubbles) appear at once
+    # retained_styles = (
+    #     renpy.screenlang.text_property_names
+    #     + renpy.screenlang.position_property_names)
     retained_styles = (
-        renpy.screenlang.text_property_names
-        + renpy.screenlang.position_property_names)
-
+        []
+        +[])
     #This function gets called after each dialogue is shown
     # It is responsible for calculating what will be shown with the next dialogue
     def hide_dialogue(current_dialogue=None, screen="bubble_say"):
@@ -197,8 +199,10 @@ init python:
                     widget_style = {
                         k : getattr(widget.style, k)
                         for k in dir(widget.style)
-                        if k in retained_styles
+                        # if k in retained_styles
+
                     }
+                    
                     current_dialogue[-1]['what_style'] = widget_style
 
                 retained_dialogues.append(list(current_dialogue))
@@ -361,20 +365,20 @@ define speech_bubble_k = Character(
     who_color="#FDD",
     what_style="bubble_speech_text")
 
-label speech_bubble_example:
-    $ quick_menu = False
-    window hide
-    scene expression "#777"
+# label speech_bubble_example:
+#     $ quick_menu = False
+#     window hide
+#     scene expression "#777"
 
-    speech_bubble_k """A few lines showing the speech bubble system in action...""" (500, 300, "righttop",show_retain=1)
-    speech_bubble_a "Style default (baseright)\nYou can press Alt+C to show the used pos" (640, 320, what_color="#888",retain=5)
-    speech_bubble_k "Style baseleft" (640, 320, "baseleft")
-    speech_bubble_a "Style leftbase" (640, 320, "leftbase")
-    speech_bubble_k "Style lefttop" (640, 320, "lefttop")
-    speech_bubble_a "Style topleft" (640, 320, "topleft")
-    speech_bubble_k "Style topright" (640, 320, "topright")
-    speech_bubble_a "Style righttop" (640, 320, "righttop")
-    speech_bubble_k "Style rightbase" (640, 320, "rightbase")
-    speech_bubble_a "... and back to the game" (640, 320, show_type="bubble_thought")
+#     speech_bubble_k """A few lines showing the speech bubble system in action...""" (500, 300, "righttop",show_retain=1)
+#     speech_bubble_a "Style default (baseright)\nYou can press Alt+C to show the used pos" (640, 320, what_color="#888",retain=5)
+#     speech_bubble_k "Style baseleft" (640, 320, "baseleft")
+#     speech_bubble_a "Style leftbase" (640, 320, "leftbase")
+#     speech_bubble_k "Style lefttop" (640, 320, "lefttop")
+#     speech_bubble_a "Style topleft" (640, 320, "topleft")
+#     speech_bubble_k "Style topright" (640, 320, "topright")
+#     speech_bubble_a "Style righttop" (640, 320, "righttop")
+#     speech_bubble_k "Style rightbase" (640, 320, "rightbase")
+#     speech_bubble_a "... and back to the game" (640, 320, show_type="bubble_thought")
 
-    return
+#     return

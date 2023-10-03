@@ -119,8 +119,9 @@ define config.window_hide_transition = Dissolve(.2)
 ## number is the number of characters per second to type out.
 
 default preferences.text_cps = 60
-
-
+# default preferences.text_line_leading = 10
+init python:
+    style.default.line_leading = 4
 ## The default auto-forward delay. Larger numbers lead to longer waits, with 0
 ## to 30 being the valid range.
 

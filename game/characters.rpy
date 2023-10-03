@@ -1,5 +1,6 @@
 ﻿# The script of the game goes in this file.
-
+init python:
+    selena_outfit=""
 # Declare characters used by this game. The color argument colorizes the
 # name of the character..
 # init python:
@@ -319,7 +320,7 @@ image Selena_mouth_smile_speaking:
     repeat
 layeredimage Selena:
     always:
-        "Characters/Selena/Selena_base[bedtime].webp"
+        "Characters/Selena/Selena_base_[selena_outfit].png"
     group eyes:
         attribute open default:
             "Selena_eyes_blink"

@@ -34,7 +34,7 @@ init python:
         return (new_ypos)
 label Chapter_4:
     # call nextpage
-    # $ bedtime="_bedtime"
+    # $ selena_outfit="_bedtime"
     scene black
     call screen chap("4", "Stay")
     scene house_hallway with dissolve: #with blinking
@@ -359,7 +359,7 @@ label Chapter_4:
     call nextpage
     scene flashback
     # flashback line, but with lewd music attached to it to imply that it’s lewder than it seemed
-    $ bedtime="_bedtime"
+    $ selena_outfit="bedtime"
     show Selena blush smile concerned midclose at middef,sway:
         yoffset 200
     show black:

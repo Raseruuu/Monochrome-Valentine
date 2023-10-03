@@ -48,8 +48,8 @@
     call nextpage
     hide screen CG_1 with dissolve
     n "That one desire was overpowering my other senses. I should stay, talk it out, scream, do something, don’t let it go." (200,150,show_tail="narr",show_xmax=500,show_retain=2)
-    n "All these thoughts which was once a cacophony of madness, now silent as still water." (170,600,show_tail="narr",show_xmax=550,show_retain=1)
-    n "And the only thought left standing, was that this story had run its course." (200,950,show_tail="narr",show_xmax=500)
+    n "All these thoughts which were once a cacophony of madness, now silent as still water." (170,600,show_tail="narr",show_xmax=550,show_retain=1)
+    n "And the only thought left standing was that this story had run its course." (200,950,show_tail="narr",show_xmax=500)
 
 
     scene white with dissolve
@@ -123,7 +123,7 @@ label chapter1:
     n  "I hesitated. To an outside observer, I must’ve looked insane." (30,50,show_tail="narr",show_xmax=700, show_retain=3)
     n "Miming a throwing motion, wrestling with myself about whether to get rid of something that was once so precious to me." (30,500,show_tail="narr",show_xmax=740, show_retain=2)
     n  "On one side, I thought that things could return to normal." (30,750,show_tail="narr",show_xmax=650, show_retain=1)
-    n  "We’d had our fights before, we’ve even had moments where it looked like we were going to split up for good, but we always found our way back to each other." (220,975,show_tail="narr",show_xmax=650)
+    n  "We've had our fights before. We’ve even had moments where it looked like we were going to split up for good, but we always found our way back to each other." (220,975,show_tail="narr",show_xmax=650)
 
     call nextpage
     # scene flashback #white background, black grids
