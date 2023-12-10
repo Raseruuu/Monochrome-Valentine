@@ -689,7 +689,7 @@ style slot_button_text:
 screen preferences():
     tag menu
     add "white"
-    use game_menu(_("Preferences"), scroll="viewport"):
+    use game_menu(_("Preferences")):
         hbox:
             ysize 1300
             null width 150
@@ -719,7 +719,7 @@ screen preferences():
                 null height (2 * gui.pref_spacing)
                 vbox:
                     style_prefix "slider"
-                    box_wrap True
+                    # box_wrap True
                     vbox:
                         label _("Text Speed")
                         bar value Preference("text speed")
