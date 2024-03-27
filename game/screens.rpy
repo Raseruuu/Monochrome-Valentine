@@ -689,7 +689,7 @@ style slot_button_text:
 screen preferences():
     tag menu
     add "white"
-    use game_menu(_("Preferences")):
+    use game_menu(_("Prefs")):
         hbox:
             ysize 1300
             null width 150

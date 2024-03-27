@@ -124,7 +124,8 @@ label chapter1:
     n "Miming a throwing motion, wrestling with myself about whether to get rid of something that was once so precious to me." (30,500,show_tail="narr",show_xmax=740, show_retain=2)
     n  "On one side, I thought that things could return to normal." (30,750,show_tail="narr",show_xmax=650, show_retain=1)
     n  "We've had our fights before. We’ve even had moments where it looked like we were going to split up for good, but we always found our way back to each other." (220,975,show_tail="narr",show_xmax=650)
-
+    n  "Ashley..." (220,975,show_tail="narr",show_xmax=650)
+    
     call nextpage
     # scene flashback #white background, black grids
     scene flashback

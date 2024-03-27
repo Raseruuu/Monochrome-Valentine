@@ -164,12 +164,12 @@ default retained_dialogues = []
 init python:
 
     # This is just a list of style names that we want to remember for when multiple dialogues (bubbles) appear at once
-    # retained_styles = (
-    #     renpy.screenlang.text_property_names
-    #     + renpy.screenlang.position_property_names)
     retained_styles = (
-        []
-        +[])
+        renpy.screenlang.text_property_names
+        + renpy.screenlang.position_property_names)
+    # retained_styles = (
+    #     []
+    #     +[])
     #This function gets called after each dialogue is shown
     # It is responsible for calculating what will be shown with the next dialogue
     def hide_dialogue(current_dialogue=None, screen="bubble_say"):
