@@ -8,6 +8,9 @@ image station_ext_run:
 image station_int:
     "images/bg/Station2.webp"
     zoom 2.0
+image Ashleygoodbye:
+    "images/cg/Ashley_goodbye.png"
+    zoom 2.0
 image bagel_int:
     "images/bg/store_interior.webp"
 
@@ -347,9 +350,13 @@ label chapter5_2: #Closure with Ashley
 
     call nextpage #20
 
-    n "She plants a small peck on my lips and then backs away." (280,500,show_tail="narr",show_xmax=600,show_retain=2)
-    a "Take care, Blake N Lawrence. If I see you again someday, I would hope that we're both living happier lives than before." (400,700,show_tail="righttop",show_xmax=400,show_retain=1)
+    n "She plants a small peck on my lips and then backs away." (280,500,show_tail="narr",show_xmax=600,show_retain=0)
     hide Ashley with Dissolve(1.5)
+    show Ashleygoodbye with dissolve:
+        xalign 0.5, yalign 0.5
+        zoom 0.45 
+    a "Take care, Blake N Lawrence. If I see you again someday, I would hope that we're both living happier lives than before." (400,700,show_tail="righttop",show_xmax=400,show_retain=1)
+    # n "" (500,900,show_tail="narr",show_xmax=350)
     n "The train doors close as Ashley steps in." (500,900,show_tail="narr",show_xmax=350)
 
     # Ashley on the train could also be a good CG

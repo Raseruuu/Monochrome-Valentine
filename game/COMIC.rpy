@@ -167,6 +167,8 @@ init python:
     retained_styles = (
         renpy.screenlang.text_property_names
         + renpy.screenlang.position_property_names)
+
+   
     # retained_styles = (
     #     []
     #     +[])
@@ -199,10 +201,11 @@ init python:
                     widget_style = {
                         k : getattr(widget.style, k)
                         for k in dir(widget.style)
-                        # if k in retained_styles
+                        if k in retained_styles
 
                     }
                     
+                    print(widget_style)
                     current_dialogue[-1]['what_style'] = widget_style
 
                 retained_dialogues.append(list(current_dialogue))
@@ -274,7 +277,7 @@ screen bubble_subscreen(who, **kwargs):
     # style_prefix "{}_{}".format(kwargs['type'], kwargs['tail'])
     style_prefix "{}_{}".format(kwargs['type'], kwargs['tail']).strip("_")
     # style_prefix "{}_{}".format(kwargs['type'], kwargs['tail'])
-    $ print("{}_{}".format(kwargs['type'], kwargs['tail']).strip("_"))
+    # $ print("{}_{}".format(kwargs['type'], kwargs['tail']).strip("_"))
     fixed:
         pos (kwargs['pos'][0]+100,kwargs['pos'][1]+100)
         frame:

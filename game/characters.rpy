@@ -655,146 +655,146 @@ layeredimage Blake:
             WhileSpeaking("Blake","Blake_mouth_smile_speaking","Characters/Blake/Blake_mouth_opensmile.webp")
 image Marie_eyes_blink:
     choice:
-        "Marie/Marie_eyes.png"
+        "Characters/Marie/Marie_eyes.png"
         pause 4.0
     choice:
-        "Marie/Marie_eyes_midclose.png"
+        "Characters/Marie/Marie_eyes_midclose.png"
         pause 0.07
-        "Marie/Marie_eyes_closed.png"
+        "Characters/Marie/Marie_eyes_closed.png"
         pause 0.1
-        "Marie/Marie_eyes_midclose.png"
+        "Characters/Marie/Marie_eyes_midclose.png"
         pause 0.07
-        "Marie/Marie_eyes.png"
+        "Characters/Marie/Marie_eyes.png"
         pause 2.0
     choice:
-        "Marie/Marie_eyes_midclose.png"
+        "Characters/Marie/Marie_eyes_midclose.png"
         pause 0.05
-        "Marie/Marie_eyes_closed.png"
+        "Characters/Marie/Marie_eyes_closed.png"
         pause 0.07
-        "Marie/Marie_eyes_midclose.png"
+        "Characters/Marie/Marie_eyes_midclose.png"
         pause 0.05
-        "Marie/Marie_eyes.png"
+        "Characters/Marie/Marie_eyes.png"
         pause 0.1
-        "Marie/Marie_eyes_midclose.png"
+        "Characters/Marie/Marie_eyes_midclose.png"
         pause 0.05
-        "Marie/Marie_eyes_closed.png"
+        "Characters/Marie/Marie_eyes_closed.png"
         pause 0.07
-        "Marie/Marie_eyes_midclose.png"
+        "Characters/Marie/Marie_eyes_midclose.png"
         pause 0.05
-        "Marie/Marie_eyes.png"
+        "Characters/Marie/Marie_eyes.png"
         pause 2.0
     repeat
 image Marie_eyes_midclose:
     choice:
-        "Marie/Marie_eyes_midclose.png"
+        "Characters/Marie/Marie_eyes_midclose.png"
         pause 4.0
     choice:
-        "Marie/Marie_eyes_midclose.png"
+        "Characters/Marie/Marie_eyes_midclose.png"
         pause 0.07
-        "Marie/Marie_eyes_closed.png"
+        "Characters/Marie/Marie_eyes_closed.png"
         pause 0.1
-        "Marie/Marie_eyes_midclose.png"
+        "Characters/Marie/Marie_eyes_midclose.png"
         pause 0.07
-        "Marie/Marie_eyes_midclose.png"
+        "Characters/Marie/Marie_eyes_midclose.png"
         pause 2.0
     choice:
-        "Marie/Marie_eyes_midclose.png"
+        "Characters/Marie/Marie_eyes_midclose.png"
         pause 0.05
-        "Marie/Marie_eyes_closed.png"
+        "Characters/Marie/Marie_eyes_closed.png"
         pause 0.07
-        "Marie/Marie_eyes_midclose.png"
+        "Characters/Marie/Marie_eyes_midclose.png"
         pause 0.07
-        "Marie/Marie_eyes_closed.png"
+        "Characters/Marie/Marie_eyes_closed.png"
         pause 0.07
-        "Marie/Marie_eyes_midclose.png"
+        "Characters/Marie/Marie_eyes_midclose.png"
         pause 2.05
     repeat
 image Marie_eyes_lookaway:
     choice:
-        "Marie/Marie_eyes_lookaway.png"
+        "Characters/Marie/Marie_eyes_lookaway.png"
         pause 4.0
     choice:
-        "Marie/Marie_eyes_lookaway.png"
+        "Characters/Marie/Marie_eyes_lookaway.png"
         pause 0.07
-        "Marie/Marie_eyes_closed.png"
+        "Characters/Marie/Marie_eyes_closed.png"
         pause 0.1
-        "Marie/Marie_eyes_lookaway.png"
+        "Characters/Marie/Marie_eyes_lookaway.png"
         pause 0.07
-        "Marie/Marie_eyes_lookaway.png"
+        "Characters/Marie/Marie_eyes_lookaway.png"
         pause 2.0
     choice:
-        "Marie/Marie_eyes_lookaway.png"
+        "Characters/Marie/Marie_eyes_lookaway.png"
         pause 0.05
-        "Marie/Marie_eyes_closed.png"
+        "Characters/Marie/Marie_eyes_closed.png"
         pause 0.07
-        "Marie/Marie_eyes_lookaway.png"
+        "Characters/Marie/Marie_eyes_lookaway.png"
         pause 0.07
-        "Marie/Marie_eyes_closed.png"
+        "Characters/Marie/Marie_eyes_closed.png"
         pause 0.07
-        "Marie/Marie_eyes_lookaway.png"
+        "Characters/Marie/Marie_eyes_lookaway.png"
         pause 2.05
     repeat
 image Marie_mouth_frown_speaking:
-    "Marie/Marie_mouth_open2.png"
+    "Characters/Marie/Marie_mouth_open2.png"
     pause 0.08
-    "Marie/Marie_mouth_open.png"
+    "Characters/Marie/Marie_mouth_open.png"
     pause 0.1
-    "Marie/Marie_mouth_open2.png"
+    "Characters/Marie/Marie_mouth_open2.png"
     pause 0.08
-    "Marie/Marie_mouth_frown.png"
+    "Characters/Marie/Marie_mouth_frown.png"
     pause 0.08
     repeat
 image Marie_mouth_smile_speaking:
-    "Marie/Marie_mouth_opensmile2.png"
+    "Characters/Marie/Marie_mouth_opensmile2.png"
     pause 0.08
-    "Marie/Marie_mouth_opensmile.png"
+    "Characters/Marie/Marie_mouth_opensmile.png"
     pause 0.1
-    "Marie/Marie_mouth_opensmile2.png"
+    "Characters/Marie/Marie_mouth_opensmile2.png"
     pause 0.08
-    "Marie/Marie_mouth_smile.png"
+    "Characters/Marie/Marie_mouth_smile.png"
     pause 0.1
-    "Marie/Marie_mouth_open2.png"
+    "Characters/Marie/Marie_mouth_open2.png"
     pause 0.08
-    "Marie/Marie_mouth_open.png"
+    "Characters/Marie/Marie_mouth_open.png"
     pause 0.1
-    "Marie/Marie_mouth_open2.png"
+    "Characters/Marie/Marie_mouth_open2.png"
     pause 0.08
-    "Marie/Marie_mouth_smile.png"
+    "Characters/Marie/Marie_mouth_smile.png"
     pause 0.08
     repeat
 
 layeredimage Marie:
     always:
-        "Marie/Marie_base.png"
+        "Characters/Marie/Marie_base.png"
     group eyes:
         attribute open default:
             "Marie_eyes_blink"
         attribute oneclose:
-            "Marie/Marie_eyes2.png"
+            "Characters/Marie/Marie_eyes2.png"
         attribute midclose:
             "Marie_eyes_midclose"
         attribute lookaway:
             "Marie_eyes_lookaway"
         attribute closed:
-            "Marie/Marie_eyes_closed.png"
+            "Characters/Marie/Marie_eyes_closed.png"
     always:
-        "Marie/Marie_glasses.png"
+        "Characters/Marie/Marie_glasses.png"
     group eyebrows:
         attribute up default:
-            "Marie/Marie_eyebrows_normal.png"
+            "Characters/Marie/Marie_eyebrows_normal.png"
         attribute concerned:
-            "Marie/Marie_eyebrows_concerned.png"
+            "Characters/Marie/Marie_eyebrows_concerned.png"
 
         attribute down:
-            "Marie/Marie_eyebrows_angry.png"
+            "Characters/Marie/Marie_eyebrows_angry.png"
 
     group mouth:
         attribute frown:
-            WhileSpeaking("Marie","Marie_mouth_frown_speaking","Marie/Marie_mouth_frown.png")
+            WhileSpeaking("Marie","Marie_mouth_frown_speaking","Characters/Marie/Marie_mouth_frown.png")
         attribute openmouth:
-            WhileSpeaking("Marie","Marie_mouth_frown_speaking","Marie/Marie_mouth_open.png")
+            WhileSpeaking("Marie","Marie_mouth_frown_speaking","Characters/Marie/Marie_mouth_open.png")
         attribute open3:
-            WhileSpeaking("Marie","Marie_mouth_frown_speaking","Marie/Marie_mouth_open3.png")
+            WhileSpeaking("Marie","Marie_mouth_frown_speaking","Characters/Marie/Marie_mouth_open3.png")
         attribute smile default:
-            WhileSpeaking("Marie","Marie_mouth_smile_speaking","Marie/Marie_mouth_smile.png")
+            WhileSpeaking("Marie","Marie_mouth_smile_speaking","Characters/Marie/Marie_mouth_smile.png")
     zoom 0.98
