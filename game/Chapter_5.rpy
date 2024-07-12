@@ -58,7 +58,7 @@ label chapter5_1: #Saying Goodbyes
     show Selena at middef
     s "Heh, we had fun together didn't we?" (450,180,show_tail="rightbase",show_xmax=400,show_retain=5)
     b "Yeah." (-50,310,show_tail="leftbase",show_xmax=600,show_retain=4)
-    s "...are you sad?" (520,380,show_tail="leftbase",show_xmax=600,show_retain=3)
+    s "...Are you sad?" (520,380,show_tail="leftbase",show_xmax=600,show_retain=3)
     b "Yeah." (-50,580,show_tail="leftbase",show_xmax=600,show_retain=2)
     show Selena concerned
     s "Me too." (550,680,show_tail="lefttop",show_xmax=600,show_retain=1)
