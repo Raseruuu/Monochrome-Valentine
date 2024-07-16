@@ -9,7 +9,7 @@ image station_int:
     "images/bg/Station2.webp"
     zoom 2.0
 image Ashleygoodbye:
-    "images/cg/Ashley_goodbye.png"
+    "images/cg/Ashley_goodbye.webp"
     zoom 2.0
 image bagel_int:
     "images/bg/store_interior.webp"
