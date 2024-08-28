@@ -104,7 +104,7 @@ label chapter1:
     n "In my hand, a memento from the past two years." (30,50,show_tail="narr",show_xmax=550, show_retain=4)
     n "A month ago, this would’ve sparked joy; made me feel like she was with me, even when we were too busy to hang out." (30,260,show_tail="narr",show_xmax=700, show_retain=3)
     n "But now..." (500,750,show_tail="narr",show_xmax=300, show_retain=2)
-    n "Now I feel… angry, sad, empty." (450,930,show_tail="narr",show_xmax=400, show_retain=1)
+    n "Now I feel... angry, sad, empty." (450,930,show_tail="narr",show_xmax=400, show_retain=1)
     n "How did things get like this?" (500,1150,show_tail="narr",show_xmax=350,)
     hide memento with dissolve
     call nextpage
@@ -173,13 +173,13 @@ label chapter1:
     stop music
 
     s "{size=60}HEY, LITTERBUG! YOU DROPPED SOMETHING!{/size}" (200,450,show_tail="yell",show_xmax=750) with Shake((0, 0, 0, 0), 0.5, dist=30)
-    #"A voice addresses me, not from my own mind, but from… the bridge?"
+    #"A voice addresses me, not from my own mind, but from... the bridge?"
     play music "audio/Smile_Sweetly.ogg" fadein 4.5
     call nextpage
     show lake # at "lookaround" (zoom 1.5, move around, before zoom 1.0)
     show CG2 with dissolve
     n "In the distance, I spot the owner of the annoyed voice." (50,50,show_tail="narr",show_xmax=630,show_retain=3)
-    n "In her hand I see…" (100,300,show_tail="narr",show_xmax=400,show_retain=2)
+    n "In her hand I see..." (100,300,show_tail="narr",show_xmax=400,show_retain=2)
     # show memento:
     #     xanchor 0.0 xpos 0.15
     #     zoom 0.5
@@ -206,7 +206,7 @@ label chapter1:
     n "At least, that’s what I think she was doing." (450,930,show_tail="narr",show_xmax=400)
 
     call nextpage
-    s "So… do you always just throw random objects at people?" (350,250,show_tail="baseright",show_xmax=345)
+    s "So... do you always just throw random objects at people?" (350,250,show_tail="baseright",show_xmax=345)
     # "She hands me back the memento that I had so carelessly thrown away."
     show memento: #at "give back transform (enter from bottom, pause, exit bottom with zoom in)
         zoom 0.1 xalign 0.5 yalign 0.6
@@ -239,7 +239,7 @@ label chapter1:
     with Dissolve(1.5)
     n "I muster a weak smile as my eyes rest upon the memento in my hand." (-20,80,show_tail="narr",show_xmax=300,show_retain=3)
     show Selena squiggly midclose #new expression
-    n "Ha… I just got this back, feeling regret for getting rid of it. And I already want to repeat the same actions as if it’ll somehow make me feel better. \nWhat’s wrong with-" (200,400,show_tail="narr",show_xmax=600,show_retain=2)
+    n "Ha... I just got this back, feeling regret for getting rid of it. And I already want to repeat the same actions as if it’ll somehow make me feel better. \nWhat’s wrong with-" (200,400,show_tail="narr",show_xmax=600,show_retain=2)
     s "Oi, litterbug! You in there?" (500,750,show_tail="topleft",show_xmax=400,show_retain=1)
     b "Huh?" (800,1200,show_tail="baseright",show_xmax=200)
     pause
@@ -247,7 +247,7 @@ label chapter1:
     hide memento
     show Selena at middef with dissolve
         #expression
-    s "Hm… It’s pretty rude to stare so blatantly, you know?" (400,300,show_tail="baseright",show_xmax=450,show_retain=3)
+    s "Hm... It’s pretty rude to stare so blatantly, you know?" (400,300,show_tail="baseright",show_xmax=450,show_retain=3)
     b "Ah! W-wait, no, I-I wasn’t, I swear!" (-10,600,show_tail="leftbase",show_xmax=400,show_retain=2) with Shake((0, 0, 0, 0), 0.5, dist=20)
     show Selena up opensmile closed at bounce #laugh
 
@@ -271,7 +271,7 @@ label chapter1:
     scene park with dissolve
     call nextpage
     show Selena open up at middef with dissolve
-    b "It’s… a long story." (30,50,show_tail="lefttop",show_xmax=500,show_retain=5)
+    b "It’s... a long story." (30,50,show_tail="lefttop",show_xmax=500,show_retain=5)
     show Selena midclose horizontal
     s "Hmmm, that so?" (500,300,show_tail="baseleft",show_xmax=300,show_retain=4)
     show Selena open up at middef
@@ -306,7 +306,7 @@ label chapter1:
     call nextpage
     show Selena with ease:
         xalign 0.5
-    b "Isn’t… isn’t that supposed to food? Like, you can’t hear someone over the crunch of-{nw}" (20,150,show_tail="leftbase",show_xmax=400,show_retain=2) ## [jeroz]
+    b "Isn’t... isn’t that supposed to food? Like, you can’t hear someone over the crunch of-{nw}" (20,150,show_tail="leftbase",show_xmax=400,show_retain=2) ## [jeroz]
     show Selena closed at bounce
     s "What’s that? Can’t hear you while I’m drinking!" (520,850,show_tail="lefttop",show_xmax=360,show_retain=1)
     btr ". . ." (400,1330, show_tail="btr",show_xmax=800)
@@ -324,13 +324,13 @@ label chapter1:
     call nextpage
     n "For just a brief moment, I thought I saw her again." (200,50,show_tail="narr",show_xmax=500,show_retain=2)
     show screen CG_1 with dissolve
-    n  "I was back in that hallway…" (70,250,show_tail="narr",show_xmax=400,show_retain=1)
-    b "I was… close to someone, for a long time." (550,750,show_tail="righttop",show_xmax=400,show_retain=0)
+    n  "I was back in that hallway..." (70,250,show_tail="narr",show_xmax=400,show_retain=1)
+    b "I was... close to someone, for a long time." (550,750,show_tail="righttop",show_xmax=400,show_retain=0)
 
     hide screen CG_1 with dissolve
     # scene flashback
     nv "I could see her again; the first day we met, she strode into our dingy basement office with the manager."
-    nv "She seemed so… out of place."
+    nv "She seemed so... out of place."
     nv "She wore a nicely tailored suit, carried a briefcase, had this sort of air about her that made me think that this was a girl who would be more natural commanding departments rather than working alongside one."
     nv "She seemed so far out of my league, so I never considered that we’d be anything more than coworkers."
     nvl clear
@@ -340,10 +340,10 @@ label chapter1:
     call nextpage
     show Ashley down frown at middef with dissolve:
         xalign 0.35
-    n "We used to work in {b}I.T.{/b} together, I remember she told me that she had been demoted as part of a retaliatory efforts by the company due to, as she put it…" (80,60,show_tail="narr",show_xmax=860,show_retain=3)
+    n "We used to work in {b}I.T.{/b} together, I remember she told me that she had been demoted as part of a retaliatory efforts by the company due to, as she put it..." (80,60,show_tail="narr",show_xmax=860,show_retain=3)
     a "Machiavellian-esque bullshit." (480,380,show_tail="baseleft",show_xmax=400,show_retain=2)
     n "It was like I was hearing her voice again." (450,550,show_tail="narr",show_xmax=400,show_retain=1)
-    b "I wish I could say that we had a stereotypical romantic confession, but to be honest… we were just doing routine system maintenance when she asked." (-70,850,show_tail="narr",show_xmax=850)
+    b "I wish I could say that we had a stereotypical romantic confession, but to be honest... we were just doing routine system maintenance when she asked." (-70,850,show_tail="narr",show_xmax=850)
 
     call nextpage
     show Ashley up oneclose smile with fade
@@ -364,9 +364,9 @@ label chapter1:
         xalign 0.3
     call nextpage
     show Ashley smile
-    a "Here. I know I’m… not the easiest person to be with, but I really do appreciate your company. So, I had this made for you." (500,320,show_tail="baseleft",show_xmax=380,show_retain=3)
+    a "Here. I know I’m... not the easiest person to be with, but I really do appreciate your company. So, I had this made for you." (500,320,show_tail="baseleft",show_xmax=380,show_retain=3)
     show Ashley concerned midclose
-    a "Ah! Don’t read too much into it. It’s just… I wanted to show you that… I really care about you." (440,500,show_tail="topleft",show_xmax=460,show_retain=2)
+    a "Ah! Don’t read too much into it. It’s just... I wanted to show you that... I really care about you." (440,500,show_tail="topleft",show_xmax=460,show_retain=2)
     b "It didn’t hit me at first, what this gift meant. Look at it, it’s a ring from one of my favorite game franchises, that houses a thumb drive." (-50,800,show_tail="narr",show_xmax=850,show_retain=1)
     b "It’s thoughtful, practical, and romantic. She really went out of her way to give this to me, and what did I give her instead?" (60,1050,show_tail="narr",show_xmax=800)
 
@@ -374,10 +374,10 @@ label chapter1:
     show Ashley open up with fade
     b "A few days later, I repaid the gift she’d put a lot of thought and effort into giving me with a  box of rare chocolates from a fancy confectionary a few blocks down from our apartment, something I thought girls would like, something I thought she would like." (470,20,show_tail="narr",show_xmax=480,show_retain=4)
 
-    a "Oh. Um, these seem… pretty expensive? Thank you for this gift, " (400,510,show_tail="topleft",show_xmax=450,show_retain=3)
+    a "Oh. Um, these seem... pretty expensive? Thank you for this gift, " (400,510,show_tail="topleft",show_xmax=450,show_retain=3)
     show Ashley closed
-    extend "I… really appreciate it." (400,510,show_tail="topleft",show_xmax=450,show_retain=2)
-    n "That’s what she said at the time, but it wasn’t the reaction I expected. I didn’t question it at the time, didn’t want to, couldn’t see the writing on the wall. Maybe if I had taken just a moment to think about how she must’ve been feeling, I could’ve seen what came next…" (20,800,show_tail="narr",show_xmax=850,show_retain=1)
+    extend "I... really appreciate it." (400,510,show_tail="topleft",show_xmax=450,show_retain=2)
+    n "That’s what she said at the time, but it wasn’t the reaction I expected. I didn’t question it at the time, didn’t want to, couldn’t see the writing on the wall. Maybe if I had taken just a moment to think about how she must’ve been feeling, I could’ve seen what came next..." (20,800,show_tail="narr",show_xmax=850,show_retain=1)
     n "Another sigh escaped my lips, as the memory of the last day of our relationship played in my head like a film projected onto the wall." (100,1110,show_tail="narr",show_xmax=720)
 
     call nextpage
@@ -385,16 +385,16 @@ label chapter1:
     a "Yes, it’s true. I’m transferring out of the department."(450,350,show_tail="lefttop",show_xmax=400,show_retain=1)
     show Ashley midclose frown
     extend" I apologize for dumping this on you out of nowhere but..."(450,350,show_tail="lefttop",show_xmax=400,show_retain=1)
-    extend" the truth is… about us…{w=1.0}{nw}" (450,350,show_tail="lefttop",show_xmax=400,show_retain=1)
+    extend" the truth is... about us...{w=1.0}{nw}" (450,350,show_tail="lefttop",show_xmax=400,show_retain=1)
     show Ashley concerned
     extend" I think we should break up." (450,350,show_tail="lefttop",show_xmax=400,show_retain=1)
-    n "She’d always been this unbreakable wall of strength, determination, and confidence. Yet when she told me that… I saw anger, sadness, regret as clear as day, all painted on her face. It felt like this had been the hardest decision she’d ever had to make, and I hadn’t noticed it until the very last moment. When it was already too late to stop it." (40,900,show_tail="narr",show_xmax=750)
+    n "She’d always been this unbreakable wall of strength, determination, and confidence. Yet when she told me that... I saw anger, sadness, regret as clear as day, all painted on her face. It felt like this had been the hardest decision she’d ever had to make, and I hadn’t noticed it until the very last moment. When it was already too late to stop it." (40,900,show_tail="narr",show_xmax=750)
     hide Ashley
     call nextpage
     show Ashley frown with fade:
         alpha 0.4 yanchor 0.0 ypos 0.15 #check shadow to make it slightly darker
     n  "And in the moment, I just thought; \"Please. Don’t do this.\"" (100,120,show_tail="narr",show_xmax=400,show_retain=3)
-    n  "But…" (150,350,show_tail="narr",show_xmax=300,show_retain=2)
+    n  "But..." (150,350,show_tail="narr",show_xmax=300,show_retain=2)
     n "At the same time, another voice in the back of my mind told me something that had been ignored this whole time." (350,650,show_tail="narr",show_xmax=450,show_retain=1)
     n  "She deserves better than me." (470,910,show_tail="narr",show_xmax=380)
 
@@ -430,11 +430,11 @@ label chapter1:
     call nextpage
     hide Selena with moveoutleft
 
-    n "She cupped her hands around her mouth and inhaled…" (20,100,show_tail="narr",show_xmax=550, show_retain=1)
+    n "She cupped her hands around her mouth and inhaled..." (20,100,show_tail="narr",show_xmax=550, show_retain=1)
     y "MY LANDLORD IS A JERK!" (-50,500,show_tail="yell",show_xmax=600) with Shake((0, 0, 0, 0), 0.5, dist=20)
     show Selena at middef with dissolve
     s "See, just like that." (450,650,show_tail="topleft",show_xmax=400,show_retain=3)
-    b "That’s… probably an inconvenience to other people and-" (10,950,show_tail="leftbase",show_xmax=350,show_retain=2)
+    b "That’s... probably an inconvenience to other people and-" (10,950,show_tail="leftbase",show_xmax=350,show_retain=2)
     show Selena openmouth down
     s "{size=40}I DON'T CAAAARE,\n I'M SAD!{/size}" (400,800,show_tail="yell",show_xmax=500,show_retain=1) with Shake((0, 0, 0, 0), 0.5, dist=20)
     show lake:
@@ -513,7 +513,7 @@ label chapter1:
     show Selena lookaway openmouth with ease:
         xalign 1.0
     n "I watched as her hand slowly moved to take her ringing phone out of her pocket, knowing full-well where that jingle came from."(20,30,show_tail="narr",show_xmax=680,show_retain=2)
-    n " But I didn’t really feel like addressing it, since the look in her eyes was telling me that she… had forgotten to change the ringtone." (20,240,show_tail="narr",show_xmax=500,show_retain=1)
+    n " But I didn’t really feel like addressing it, since the look in her eyes was telling me that she... had forgotten to change the ringtone." (20,240,show_tail="narr",show_xmax=500,show_retain=1)
     show Selena smile open
     s "I’ll be right back." (650,550,show_tail="topright",show_xmax=350)
     hide Selena
@@ -521,13 +521,13 @@ label chapter1:
     with dissolve
     play music "audio/Smile_Sweetly.ogg" fadein 4.5
     n "Before waiting for my answer, she turns off to the side and walks a few steps away, talking to someone on the other end. I couldn’t fully hear the entire conversation, mostly because she was speaking fluent Japanese." (50,810,show_tail="narr",show_xmax=800,show_retain=1)
-    n "Which, an average person living here might not speak, but… though I don’t look it, my dad was in the military and stationed in Japan when I was middle school." (75,1090,show_tail="narr",show_xmax=800)
+    n "Which, an average person living here might not speak, but... though I don’t look it, my dad was in the military and stationed in Japan when I was middle school." (75,1090,show_tail="narr",show_xmax=800)
 
     call nextpage
     n "My Japanese language skills have become quite rusty since we moved years ago, but I could still pick up some snippets of the conversation."(20,30,show_tail="narr",show_xmax=600,show_retain=3)
-    s "Yeah I’m awake… what do you mean… that’s today… you’re kidding… what about Akihiro, Yuu, or Ryan… what do you mean they went to a convention… I would’ve gone… not much left to pack… could probably…" (870,300,show_tail="topright",show_xmax=550,show_retain=2)
-    n "Suddenly her eyes drift to me and she goes silent for a bit. It’s true that I haven’t known her for that long, however… somewhere in my mind, when I saw that look in her eye, I couldn’t help but feel that she was cooking up some kind of plan." (-30,690,show_tail="narr",show_xmax=550,show_retain=1)
-    s "...might have a backup plan… yeah… I’m fine… okay, bye." (850,950,show_tail="topright",show_xmax=320)
+    s "Yeah I’m awake... what do you mean... that’s today... you’re kidding... what about Akihiro, Yuu, or Ryan... what do you mean they went to a convention... I would’ve gone... not much left to pack... could probably..." (870,300,show_tail="topright",show_xmax=550,show_retain=2)
+    n "Suddenly her eyes drift to me and she goes silent for a bit. It’s true that I haven’t known her for that long, however... somewhere in my mind, when I saw that look in her eye, I couldn’t help but feel that she was cooking up some kind of plan." (-30,690,show_tail="narr",show_xmax=550,show_retain=1)
+    s "...might have a backup plan... yeah... I’m fine... okay, bye." (850,950,show_tail="topright",show_xmax=320)
     play sound "audio/sfx-bleep.ogg"
     call nextpage
     show Selena at middef:
@@ -536,7 +536,7 @@ label chapter1:
         ypos 1.0
         ease 0.3 ypos 0.2
     n "She looked as though she really wanted to tell me something but was unsure of-" (20,30,show_tail="narr",show_xmax=850,show_retain=3)
-    s "So this is gonna be a weird one and I know we’ve just met but um…{nw}{w=0.8}" (480,500,show_tail="leftbase",show_xmax=400,show_retain=1)
-    s "Could I ask for… a small request?" (480,600,show_tail="lefttop",show_xmax=400,show_retain=0)
+    s "So this is gonna be a weird one and I know we’ve just met but um...{nw}{w=0.8}" (480,500,show_tail="leftbase",show_xmax=400,show_retain=1)
+    s "Could I ask for... a small request?" (480,600,show_tail="lefttop",show_xmax=400,show_retain=0)
     $ persistent.read_Chapter1=True
     return

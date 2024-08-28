@@ -53,6 +53,7 @@ define gui.interface_text_color = u'#404040'
 
 ## [FONT] in-game text.
 define gui.text_font = "font/ccwild words roman.ttf"
+# define gui.text_font = "font/Lychee-Regular.otf"
 ## [FONT] Character names.
 define gui.name_text_font = "font/ccwild words roman.ttf"
 ## [FONT] out-of-game text.

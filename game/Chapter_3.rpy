@@ -328,7 +328,7 @@ label chapter3_2: ## Talking with Pat
     b "Yeah, I was just shopping for a…" (230,1310,show_tail="leftbase",show_xmax=350)
 
     call nextpage
-    nv "Come to think of it, what was Selena to me now?"
+    nv "Come to think of it, what is Selena to me now?"
     nv "We seemed to have a past together that I don’t remember."
     nv "She’s been nothing but friendly to me, even though this may be the first time we’ve truly met."
     nv "Are we friends now?"
