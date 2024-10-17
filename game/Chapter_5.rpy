@@ -90,12 +90,12 @@ label chapter5_1: #Saying Goodbyes
     b "Thanks, sorry I didn't bring any of my own." (-50,40,show_tail="lefttop",show_xmax=600,show_retain=3)
     show Selena smile
     s "Heh, it's fine. I mean, who still uses business cards right?" (530,280,show_tail="leftbase",show_xmax=350,show_retain=2)
-    show Selena closed opensmile at bounce
+    show Selena bounce closed opensmile at bounce
     s "Obviously, the same girl who uses an actual camera instead of the one on her phone, apparently!" (500,600,show_tail="lefttop",show_xmax=380,show_retain=1)
     n "We shared a brief laugh, and though we both knew it was time to part, neither of us was willing to take that final step." (20,980,show_tail="narr",show_xmax=700)
 
     call nextpage
-    show Selena smile open
+    show Selena stand smile open 
     b "So, where will you go now?" (40,80,show_tail="leftbase",show_xmax=400,show_retain=5)
     s "Well, probably gonna take this truck and move back in with my parents for a while. But I'll probably take the scenic route." (500,340,show_tail="baseleft",show_xmax=400,show_retain=4)
     show Selena lookaway opensmile horizontal
@@ -158,9 +158,9 @@ label chapter5_1: #Saying Goodbyes
     call nextpage
     scene station_ext with dissolve:
         xalign 0.8
-    show Selena closed opensmile at middef, bounce #jump
+    show Selena bounce closed opensmile at middef, bounce #jump
     s "Phew! Okay, I feel better now." (450,180,show_tail="leftbase",show_xmax=400,show_retain=2)
-    show Selena open smile
+    show Selena stand open smile
     n "She looked at me and smiled her trademark smile." (20,600,show_tail="narr",show_xmax=400,show_retain=1)
     show Selena lookaway opensmile
     s "Alright, I'm gonna go grab a bagel down the street, right there." (500,780,show_tail="lefttop",show_xmax=350)
@@ -495,7 +495,7 @@ label chapter5_3: #Running after Selena
 
     call nextpage ## 10
     play music "audio/bgm_maoudamashii_acoustic13.ogg" volume 0.5
-    show Selena up openmouth at bounce #bounce and shocked
+    show Selena bounce up openmouth at bounce #bounce and shocked
     n "She twitched, and slowly looked in my general direction." (50,20,show_tail="narr",show_xmax=500,show_retain=4)
     n "Her gaze remained fixated on me, as if I was some kinda illusion that'd vanish if she blinked." (20,250,show_tail="narr",show_xmax=450,show_retain=3)
     s "Blake?" (750,400,show_tail="leftbase",show_xmax=500,show_retain=2)

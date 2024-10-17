@@ -297,23 +297,23 @@ label Chapter2_2: #Inside Selena’s apartment, packing her stuff*
     show Selena opensmile up #new excited expression
     s "I know right! But what if it’s true?"  (450,600,show_tail="topright",show_xmax=400,show_retain=2)
     b "Hm, you do speak fluent Japanese. Sorry, I overheard you later." (20,1000,show_tail="leftbase",show_xmax=350,show_retain=1)
-    show Selena smile at bounce
+    show Selena bounce smile at bounce
     s "I do, yes!" (600,900,show_tail="topleft",show_xmax=500)
-
+    
     call nextpage
     s "My mother is a Japanese citizen, so I spent a lot of my childhood in Japan!" (400,250,show_tail="baseright",show_xmax=380,show_retain=4)
     b "Oh yeah? When I was starting middle school, my dad took us with him when he was stationed in Japan." (-20,750,show_tail="leftbase",show_xmax=450,show_retain=3)
     s "Well the timeline sure adds up! Ooh, do you remember what class you were in?" (450,650,show_tail="lefttop",show_xmax=430,show_retain=2)
     b "Sorry, I was going through some stuff at the time, so I can’t really remember a lot of the finer details. I can barely remember what my homeroom teacher’s name was." (10,1080,show_tail="leftbase",show_xmax=700,show_retain=1)
-    show Selena squiggly
+    show Selena stand squiggly
     s "Aw, that sucks." (550,1150,show_tail="topleft",show_xmax=500)
 
     call nextpage
     n "She seemed genuinely disappointed by-" (10,60,show_tail="narr",show_xmax=500,show_retain=4)
-    show Selena smile at bounce
+    show Selena bounce smile at bounce
     s "Ooh! Ya know what?" (420,300,show_tail="leftbase",show_xmax=500,show_retain=3)
     n "Nevermind, she’s back." (20,600,show_tail="narr",show_xmax=500,show_retain=2)
-    show Selena opensmile
+    show Selena stand opensmile
     s "I think I have a yearbook in here somewhere. If I find it then we can figure out if we were in the same class!" (480,850,show_tail="topleft",show_xmax=400,show_retain=1)
     b "Well alright, could be fun." (-30,1200,show_tail="baseleft",show_xmax=350)
 
@@ -683,11 +683,11 @@ label Chapter2_4: ##Vehicle troubles
     hide Blake
     call nextpage
 
-    show Selena at middef, bounce#pop up animation
+    show Selena bounce at middef, bounce#pop up animation
     b "Oh, hey. Um, how’s it going?" (-50,120,show_tail="leftbase",show_xmax=400,show_retain=3)
     s """Well, I found a box set of one of my favorite series of all time hidden in the pile,
         so I was coming out here to get my spare laptop charger from the truck.""" (520,400,show_tail="leftbase",show_xmax=370,show_retain=2)
-    show Selena midclose
+    show Selena stand midclose
     s "But then I saw you here and had to watch what you were doing and…" (550,520,show_tail="lefttop",show_xmax=320,show_retain=1)
     show Selena frown
     n "She looked at me with the same pity you’d show to a child playing basketball who didn’t even get close to sinking a shot in the hoop." (550,950,show_tail="narr",show_xmax=420)
@@ -718,9 +718,9 @@ label Chapter2_4: ##Vehicle troubles
     b "Uh, sure." (20,1310,show_tail="leftbase",show_xmax=350)
 
     call nextpage
-    show Selena open opensmile at bounce# new joyous expression at bounce
+    show Selena bounce opensmile at bounce# new joyous expression at bounce
     s "Great, thanks! Oh, one more thing! If they have Helio-Zen in stock, can you pick me up some?" (350,250,show_tail="leftbase",show_xmax=550,show_retain=3)
-    show Selena smile
+    show Selena stand smile
     s "Actually, more than the snacks, I want that drink." (550,350,show_tail="lefttop",show_xmax=350,show_retain=2)
     s "They only sell them in that specific store." (520,650,show_tail="lefttop",show_xmax=350,show_retain=1)
     b "Okay, that seems doable." (50,950,show_tail="leftbase",show_xmax=550)

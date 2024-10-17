@@ -318,9 +318,24 @@ image Selena_mouth_smile_speaking:
     "Characters/Selena/Selena_mouth_smile.webp"
     pause 0.08
     repeat
+image Selena_bounce:
+    "Characters/Selena/Selena_base_down.png"
+    pause 0.05
+    "Characters/Selena/Selena_base_.png"
+    pause 0.05
+    "Characters/Selena/Selena_base_up.png"
+    pause 0.08
+    "Characters/Selena/Selena_base_down.png"
+    pause 0.08
+    "Characters/Selena/Selena_base_.png"
+    pause 0.08
 layeredimage Selena:
-    always:
-        "Characters/Selena/Selena_base_[selena_outfit].png"
+    group body:
+        attribute stand default:
+            "Characters/Selena/Selena_base_[selena_outfit].png"
+        attribute bounce:
+            "Selena_bounce"
+        
     group eyes:
         attribute open default:
             "Selena_eyes_blink"

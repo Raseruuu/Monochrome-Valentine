@@ -249,14 +249,15 @@ label chapter1:
         #expression
     s "Hm... It’s pretty rude to stare so blatantly, you know?" (400,300,show_tail="baseright",show_xmax=450,show_retain=3)
     b "Ah! W-wait, no, I-I wasn’t, I swear!" (-10,600,show_tail="leftbase",show_xmax=400,show_retain=2) with Shake((0, 0, 0, 0), 0.5, dist=20)
-    show Selena up opensmile closed at bounce #laugh
+    show Selena bounce up opensmile closed at bounce #laugh
 
     n "Suddenly she breaks out into a laugh!" (250,750,show_tail="narr",show_xmax=500,show_retain=1)
+    
     s "It's fine, I’m just messing with you.\n Jokes aside..." (500,950,show_tail="lefttop",show_xmax=400)
 
 # ####################################################################################################jeroz
     call nextpage
-    show Selena midclose frown horizontal:
+    show Selena stand midclose frown horizontal:
         linear 1.0 zoom 0.8 #yalign 0.1
     n "Her mood, tone, and body language completely shifted. From the kind of cool girl you’d be hanging out with in class, to a girl who is probing you for information." (100,50,show_tail="narr",show_xmax=700,show_retain=4)
     show Selena smile #default expression
@@ -307,11 +308,11 @@ label chapter1:
     show Selena with ease:
         xalign 0.5
     b "Isn’t... isn’t that supposed to food? Like, you can’t hear someone over the crunch of-{nw}" (20,150,show_tail="leftbase",show_xmax=400,show_retain=2) ## [jeroz]
-    show Selena closed at bounce
+    show Selena bounce closed at bounce
     s "What’s that? Can’t hear you while I’m drinking!" (520,850,show_tail="lefttop",show_xmax=360,show_retain=1)
     btr ". . ." (400,1330, show_tail="btr",show_xmax=800)
 
-    hide selena with dissolve
+    hide Selena with dissolve
     call nextpage
     scene lake with dissolve
     n "Rather than look at her, I instead choose to focus on the lake. I don’t know, maybe I should try it. Pretend like she’s not here. Maybe I would feel a little better." (50,50,show_tail="narr",show_xmax=550,show_retain=2)

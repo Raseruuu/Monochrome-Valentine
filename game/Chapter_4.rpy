@@ -37,7 +37,7 @@ label Chapter_4:
     # $ selena_outfit="_bedtime"
     scene black
     call screen chap("4", "Stay")
-    scene house_hallway with dissolve: #with blinking
+    scene house_hallway with dissolve #with blinking
     call nextpage
     show Blake closed frown with dissolve:
         xalign 0.9 yanchor 0.0 ypos 0.3
@@ -112,7 +112,7 @@ label Chapter_4:
     show Selena up
     s "Promise?"(300,convo_ypos(-40),show_tail="topright",show_xmax=345,show_retain=2)
     b "Promise."(850,convo_ypos(50),show_tail="rightbase",show_xmax=400,show_retain=1)
-    show Selena down opensmile at bounce
+    show Selena bounce down opensmile at bounce
     s "Great!"(300,convo_ypos(),show_tail="topright",show_xmax=345,show_retain=0)
     call nextpage
     n "Her mood seemed to have perked up."(200,980,show_tail="narr",show_xmax=500)
@@ -151,7 +151,7 @@ label Chapter_4:
     hide screen Vampire_n_Boxer
 
     scene selena_room_box with dissolve
-    show Selena smile at middef with dissolve
+    show Selena stand smile at middef with dissolve
 
     show screen Laptop
     s "We’ll first watch the original version, " (580,convo_ypos(200),show_tail="baseleft",show_xmax=345,show_retain=2)
@@ -221,8 +221,9 @@ label Chapter_4:
     n"She’s sobbing?!"(450,convo_ypos(),show_tail="narr",show_xmax=500,show_retain=2)
     show Selena opensmile
     s "She begun the process of learning the true meaning of friendship!" (580,convo_ypos(80),show_tail="topleft",show_xmax=345,show_retain=1)
-    show Selena up at bounce
+    show Selena bounce up at bounce
     s "Next episode!"(580,convo_ypos(120),show_tail="topleft",show_xmax=345,show_retain=0)
+    show Selena stand
 # Time-skip transition here
     scene selena_house_truck with Fade(0.5, 1.5, 0.5)
     pause
@@ -264,7 +265,7 @@ label Chapter_4:
     call nextpage
     with fade
     n"....."(300,convo_ypos(-100),show_tail="narr",show_xmax=345,show_retain=2)
-    show Selena down open opensmile at bounce
+    show Selena bounce down open opensmile at bounce
     s "Fortunately, that’s what the remake solves!"(290,convo_ypos(140),show_tail="baseleft",show_xmax=345,show_retain=1)
     show Blake open opensmile at bounce
     b "Alright, let’s start watching immediately!"(640,convo_ypos(100),show_tail="righttop",show_xmax=345,show_retain=0)
