@@ -240,16 +240,22 @@ screen quick_menu():
     zorder 100
     if quick_menu:
         hbox:
-            style_prefix "quick"
-            xalign 0.5
-            yalign 1.0
-            textbutton _("Back") action Rollback()
-            textbutton _("History") action ShowMenu('history')
+            style_prefix "navigation"
+            yalign 0.0
+            xanchor 1.0 xpos 1070
+            spacing 10
+            textbutton _("Save") action ShowMenu("save")
+            textbutton _("Load") action ShowMenu("load")
             textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
-            textbutton _("Auto") action Preference("auto-forward", "toggle")
-            textbutton _("Save") action ShowMenu('save')
-            textbutton _("Options") action ShowMenu('preferences')
-
+            textbutton _("Pref") action ShowMenu("preferences")
+            textbutton _("Log") action ShowMenu('history')
+            if not main_menu:
+                textbutton _("Title") action MainMenu()
+            # textbutton _("About") action ShowMenu("about")
+            if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
+                textbutton _("Help") action ShowMenu("help")
+            if renpy.variant("pc"):
+                textbutton _("Quit") action Quit(confirm=True)
 ## Quick_menu screen is displayed whenever the player has not explicitly hidden the interface.
 init python:
     config.overlay_screens.append("quick_menu")
@@ -286,7 +292,10 @@ screen navigation():
         # textbutton _("History") action ShowMenu("history")
         textbutton _("Save") action ShowMenu("save")
         textbutton _("Load") action ShowMenu("load")
+        if not _menu:
+            textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
         textbutton _("Pref") action ShowMenu("preferences")
+
         textbutton _("Log") action ShowMenu('history')
         if not main_menu:
             textbutton _("Title") action MainMenu()
@@ -377,6 +386,7 @@ screen main_menu():
         zoom 0.636
     imagebutton idle "gui/start_reading.png" hover "gui/start_reading_hover.png" action Start() xalign 0.0 yalign 0.66 at halfsize
     imagebutton idle "gui/continue_reading.png" hover "gui/continue_reading_hover.png" action ShowMenu("load") xalign 0.0 yalign 0.74 at halfsize
+    
     imagebutton idle "gui/select_chapter.png" hover "gui/select_chapter_hover.png" action SetScreenVariable("chapsel",not chapsel) xalign 0.0 yalign 0.82 at halfsize
     # if persistent.unlocked_gallery:
     #     imagebutton idle "gui/gallery.png" hover "gui/gallery_hover.png" action ShowMenu("Gallery") xalign 0.0 yalign 0.78 at halfsize
@@ -1094,13 +1104,15 @@ style confirm_button_text:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#skip-indicator
 
+transform zoomtrans(zoomval):
+    zoom zoomval
 screen skip_indicator():
 
     zorder 100  ## Higher priority
     style_prefix "skip"
 
     frame:
-
+        # at zoomtrans(2.0)
         hbox:
             spacing 8
 
@@ -1135,7 +1147,7 @@ style skip_frame:
     padding gui.skip_frame_borders.padding
 
 style skip_text:
-    size gui.notify_text_size
+    size 40
 
 style skip_triangle:
     ## the font with BLACK RIGHT-POINTING SMALL TRIANGLE glyph in it.

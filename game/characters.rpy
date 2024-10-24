@@ -320,15 +320,15 @@ image Selena_mouth_smile_speaking:
     repeat
 image Selena_bounce:
     "Characters/Selena/Selena_base_down.png"
-    pause 0.05
+    pause 0.1
     "Characters/Selena/Selena_base_.png"
-    pause 0.05
+    pause 0.1
     "Characters/Selena/Selena_base_up.png"
-    pause 0.08
+    pause 0.1
     "Characters/Selena/Selena_base_down.png"
-    pause 0.08
+    pause 0.1
     "Characters/Selena/Selena_base_.png"
-    pause 0.08
+    pause 0.01
 layeredimage Selena:
     group body:
         attribute stand default:

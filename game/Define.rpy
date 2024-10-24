@@ -187,8 +187,8 @@ transform cutup(child): #x,y,width,height
 
 transform bounce:
     yoffset 0
-    linear 0.1 yoffset -100
-    linear 0.1 yoffset 0
+    linear 0.2 yoffset -100
+    linear 0.15 yoffset 0
 image blake_head = "blake frown"
 ############################################################
 ####               LOCATION                             ####

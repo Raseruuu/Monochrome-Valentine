@@ -296,7 +296,7 @@ label Chapter2_2: #Inside Selena’s apartment, packing her stuff*
     b "...that’d be a heck of a coincidence." (-20,200,show_tail="leftbase",show_xmax=500,show_retain=3)
     show Selena opensmile up #new excited expression
     s "I know right! But what if it’s true?"  (450,600,show_tail="topright",show_xmax=400,show_retain=2)
-    b "Hm, you do speak fluent Japanese. Sorry, I overheard you later." (20,1000,show_tail="leftbase",show_xmax=350,show_retain=1)
+    b "Hm, you do speak fluent Japanese. Sorry, I overheard you earlier." (20,1000,show_tail="leftbase",show_xmax=350,show_retain=1)
     show Selena bounce smile at bounce
     s "I do, yes!" (600,900,show_tail="topleft",show_xmax=500)
     
